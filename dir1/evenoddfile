@@ -1,13 +1,13 @@
 #!/bin/bash
 
-echo "enter number"
-read $enter number
+echo "enter a number"
+read $givenNumber
 
 rem=$(( $enter number % 2 ))
  
 if [ $rem -eq 0 ]
 then
-  echo "$enter number is even number"
+  echo "$givenNumber is even number"
 else
-  echo "$enter number is odd number"
+  echo "$givenNumber is odd number"
 fi 
