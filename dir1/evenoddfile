@@ -3,9 +3,9 @@
 echo "enter a number"
 read $givenNumber
 
-rem=$(( $enter number % 2 ))
+rem=$(( givenNumber % 2 ))
  
-if [ $rem -eq 0 ]
+if [[ $rem -eq 0 ]]
 then
   echo "$givenNumber is even number"
 else
