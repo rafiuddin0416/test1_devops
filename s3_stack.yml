@@ -1,0 +1,18 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: Testy S3 Template
+Parameters:
+  BucketName:
+    Description: Name of the bucket
+    Type: String
+Resources:
+  Bucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      AccessControl: Private
+      BucketName: !Ref BucketName
+      Tags:
+        - Key: Name
+          Value: !Ref BucketName
+Outputs:
+  BucketName:
+    Value: !Ref Bucket
