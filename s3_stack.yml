@@ -1,5 +1,4 @@
 version 0.2
-
 AWSTemplateFormatVersion: "2010-09-09"
 Description: Testy S3 Template
 Parameters:
